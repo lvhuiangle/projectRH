@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+        <title>Register</title>
+
+        <link type="text/css" rel="stylesheet" href="./styles/register.css">
+
+        <script type="text/javascript" src="register.js"></script>
+    </head>
+    <body>
+        <form action="login.html" method="" onsubmit="return validateForm()"> 
+            <table border="1" align="center" width="50%">
+                <caption >User Register</caption>
+                <tr>
+                    <td align="right">
+                        <sup><font color="red">*</font></sup>username:
+                    </td>
+                    <td><input type="text" name="username" id="username" class="input_class" onblur="checkUsername()" /><span id="username_span"> 3-15 chars</span></td>
+                </tr>
+
+                <tr>
+                    <td align="right">
+                        <sup><font color="red">*</font></sup>password:
+                    </td>
+                    <td><input type="password" name="password" id="password" class="input_class" onblur="checkPassword()" /><span id="password_span"> 6-12 chars</span></td>
+                </tr>
+
+                <tr>
+                    <td align="right">
+                        <sup><font color="red">*</font></sup>confirm password:
+                    </td>
+                    <td><input type="password" name="rePassword" id="rePassword" class="input_class" onblur="checkRePassword()" /><span id="rePassword_span"> confirm password</span></td>
+                </tr>
+
+                <tr>
+                    <td align="right">
+                        <sup><font color="red">*</font></sup>Email:
+                    </td>
+                    <td><input type="text" name="Email" id="Email" class="input_class" onblur="checkEmail()" /><span id="Email_span" > *****@gmail.com</span></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" class="button" value="register" />
+                        <input type="reset" class="button" value="reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
